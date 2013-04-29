@@ -1,24 +1,39 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="hexWorker">
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap-fileupload.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">HexWorker</a>
+  </div>
+  </div>
+  <header class="jumbotron">
+    <div class="hero-unit">
+      <div class="container">
+        <h1>HexWorker</h1>
+        <p>Under the covers with binary data</p>
+      </div>
+    </div>
+  </header>
 
   <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
   -->
+  <script src="lib/jquery-1.9.1.min.js"></script>
+  <script src="lib/underscore-min.js"></script>
+  <script src="lib/bootstrap.js"></script>
+  <script src="lib/bootstrap-fileupload.js"></script>
   <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="data-content row-fluid">
+    <div class="span2 line-number"></div>
+    <div class="span10 data">
+      <div class="span9 raw">
+        <span class="data-snip" ng-repeat="hex in data.hex">{{hex}}</span>
+      </div>
+      <div class="span3 interpreted">
+        <span class="data-snip" ng-repeat="hex in data.hex">{{hex | hex2decimal | ascii}}</span>
+      </div>
+    </div>
+  </div>
+</div>
